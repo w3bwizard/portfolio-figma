@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @font-face {
-  font-family: 'gilroy-bold';
+  font-family: 'gilroy';
   src: url("../fonts/gilroy-bold.eot");
   src: local("☺"), url("../fonts/gilroy-bold.woff") format("woff"), url("../fonts/gilroy-bold.ttf") format("truetype"), url("../fonts/gilroy-bold.svg") format("svg");
   font-weight: 700;
@@ -8,7 +8,7 @@
 }
 
 @font-face {
-  font-family: 'gilroy-medium';
+  font-family: 'gilroy';
   src: url("../fonts/gilroy-medium.eot");
   src: local("☺"), url("../fonts/gilroy-medium.woff") format("woff"), url("../fonts/gilroy-medium.ttf") format("truetype"), url("../fonts/gilroy-medium.svg") format("svg");
   font-weight: 500;
@@ -26,7 +26,7 @@
 }
 
 body {
-  font-family: gilroy-medium, tahoma;
+  font-family: gilroy, tahoma;
   font-weight: 500;
 }
 
@@ -54,6 +54,7 @@ body {
   padding: 33px 0;
   color: #828282;
   font-size: 18px;
+  font-weight: 700;
   line-height: 1.2;
 }
 
@@ -65,10 +66,8 @@ body {
   content: "";
   display: block;
   width: 100%;
-  height: 1px;
+  height: 2px;
   background-color: #828282;
-  -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
-          transform: matrix(1, 0, 0, 1, 0, 0);
   position: absolute;
   left: 0;
   bottom: 0;
@@ -93,13 +92,13 @@ body {
 
 .intro__name {
   width: 120px;
-  font-family: Gilroy-Bold;
+  font-family: gilroy;
   font-size: 47px;
   line-height: 1.25;
 }
 
 .intro__bio {
-  font-family: Gilroy-Medium;
+  font-family: gilroy;
   font-size: 18px;
   line-height: 1.22222;
 }
@@ -128,8 +127,9 @@ body {
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
-  font-family: Gilroy-Bold;
+  font-family: gilroy;
   font-size: 16px;
+  font-weight: 700;
   line-height: .8;
   text-transform: uppercase;
   color: #828282;
@@ -140,8 +140,10 @@ body {
 }
 
 .ru-en__delim {
-  color: #070707;
+  background-color: #070707;
   width: 100%;
+  height: 2px;
+  border: none;
 }
 
 .slider {
@@ -175,15 +177,12 @@ body {
 }
 
 .about__title {
-  font-family: Gilroy-Bold;
-  font-size: 34px;
-  line-height: 1.23529;
   margin-bottom: 17px;
 }
 
 .about__text {
   max-width: 485px;
-  font-family: Gilroy-Medium;
+  font-family: gilroy;
   font-size: 18px;
   line-height: 1.22222;
 }
@@ -194,5 +193,154 @@ body {
 
 .about__text p:last-child {
   margin-bottom: 0;
+}
+
+.title {
+  font-family: Gilroy;
+  font-size: 34px;
+  line-height: 1.23529;
+  text-align: center;
+}
+
+.subtitle {
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22222;
+  text-align: center;
+}
+
+.skills {
+  width: 100%;
+  padding: 90px 0;
+}
+
+.skills__title {
+  margin-bottom: 62px;
+}
+
+.skills__subtitle {
+  margin-bottom: 82px;
+}
+
+.skills__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.skills__card {
+  margin-bottom: 20px;
+  margin-right: 20px;
+  max-width: 167px;
+}
+
+.skills__card:last-child {
+  margin-right: 0;
+}
+
+.skills__card img {
+  display: block;
+  width: 100%;
+}
+
+.portfolio {
+  width: 100%;
+  background-color: #F6F6F6;
+  padding: 112px 0 96px;
+}
+
+.portfolio__title {
+  margin-bottom: 47px;
+}
+
+.portfolio__item {
+  max-width: 936px;
+  margin-bottom: 96px;
+}
+
+.portfolio__item:last-child {
+  margin-bottom: 0;
+}
+
+.portfolio__item img {
+  display: block;
+  width: 100%;
+  margin-bottom: 45px;
+}
+
+.portfolio__link {
+  display: block;
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22222;
+  text-align: center;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.footer {
+  width: 100%;
+  padding: 115px 0;
+}
+
+.footer__title {
+  margin-bottom: 20px;
+}
+
+.footer__subtitle {
+  margin-bottom: 30px;
+}
+
+.footer__button {
+  display: block;
+  width: 180px;
+  height: 42px;
+  border: 0;
+  outline: 0;
+  margin: 0 auto;
+  background-color: #070707;
+  color: #ffffff;
+  border-radius: 20px;
+  font-family: Gilroy;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22222;
+  cursor: pointer;
+  margin-bottom: 85px;
+}
+
+.footer__social {
+  margin-bottom: 45px !important;
+}
+
+.footer__text {
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.21428;
+  text-align: center;
+  color: #828282;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 342px;
+  margin: 0 auto;
+}
+
+.social__icon {
+  width: 41px;
+  height: 41px;
 }
 /*# sourceMappingURL=style.css.map */
